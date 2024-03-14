@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang=pt-br>
+
+<head>
+    <meta charset=UTF-8>
+    <meta content="width=device-width,initial-scale=1.0" name=viewport>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="div-principal">
+
+        <h2 id="cabecalho"><a href=https://github.com/camylladias>Camylla Dias' Github Profile</a></h2>
+        <p id="paragrafo">A website usually uses external resources like images, CSS, and JavaScript. Those files
+            need to be loaded from network or cache. The main thread <em>could</em> request them one
+            by one as they find them while parsing to build a DOM, but in order to speed up,
+            "preload scanner" is run concurrently. If there are things like <code>&lt;img></code> or
+            <code>&lt;link></code> in the HTML document, preload scanner peeks at tokens generated
+            by HTML parser and sends requests to the network thread in the browser process.
+        </p>
+        <figure id="imagem"><img width=400 height=400 src="gato.jpeg"
+                sizes="(min-width:800px) 800px,calc(100vw - 48px)" loading=lazy decoding=async alt=DOM />
+            <figcaption>Figura 1: Gato Akira vira-lata siamês</figcaption>
+        </figure>
+    </div>
+
+    <div class="rodape">
+        <p>
+            rodape
+        </p>
+    </div>
+</body>
+
+</html>
