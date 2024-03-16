@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+header {
+    background-color: black;
+    color: violet;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+
+}
+
+#titulo {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+nav button:hover {
+    color: skyblue;
+}
+
+main {
+    display: flex;
+    margin-top: 60px; /* Espaço para o header */
+    padding: 20px;
+}
+
+#imagem {
+    flex: 1;
+    text-align: left; /* A imagem do gato fica à esquerda */
+    padding-top: 50px;
+}
+
+#informacoes {
+    flex: 2; /* Espaço para as informações ao lado direito */
+    padding-left: 20px; /* Espaçamento entre a imagem e o texto */
+    padding-top: 50px;
+}
+
+footer {
+    background-color: black;
+    color: violet;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #imagem, #informacoes {
+        width: 100%;
+    }
+}
