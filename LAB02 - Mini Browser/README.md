@@ -12,12 +12,12 @@ O programa analisa um arquivo HTML e procura por tags específicas. Para cada ta
 ## Funcionalidades
 
 - Análise de arquivos HTML para identificar tags específicas.
-- Processamento multithread para tarefas de IO e resolução de rede.
+- Processamento multithread.
 - Exibição do tamanho do arquivo para as tags `<link>`, `<img>` e `<script>`.
 - Resolução e exibição do endereço IP para o hostname especificado na tag `<security>`.
 
 ## Uso
 
-1. Compile o código usando `javac HtmlProcessor.java`.
-2. Execute o programa com `java HtmlProcessor index.html`.
+1. Compile o código usando `javac HtmlParser.java`.
+2. Execute o programa com `java HtmlParser index.html`.
 
